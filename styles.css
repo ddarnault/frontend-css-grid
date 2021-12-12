@@ -1,1 +1,60 @@
 /*Maak hier jouw CSS!*/
+
+
+
+.container {
+    background-color: #292F36;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 174px 100px 140px 50px;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding: 16px;
+    grid-template-areas:
+          "a c c"
+          "b c c"
+          "b e d"
+          "b e ."
+          "f f f"
+
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#a {
+    background-color: #92DCE5;
+    grid-area: a;
+
+}
+
+#b {
+    background-color: #4F5B69;
+    grid-area: b;
+    padding: 10px;
+}
+
+#c {
+    background-color: #4F5B69;
+    grid-area: c;
+}
+
+#d {
+    background-color: #4F5B69;
+    grid-area: d;
+}
+
+#e {
+    background-color: #4F5B69;
+    grid-area: e;
+}
+
+#f {
+    background-color: #92DCE5;
+    grid-area: f;
+}
