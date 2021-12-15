@@ -1,1 +1,86 @@
-/*Maak hier jouw CSS!*/
+/*MOBIELE GRID*/
+.container {
+    background-color: #292F36;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding: 16px;
+    grid-template-areas:
+          "a"
+          "b"
+          "c"
+          "d"
+          "e"
+          "."
+          "f"
+
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#a {
+    color: #292F36;
+    background-color: #92DCE5;
+    grid-area: a;
+
+}
+
+#b {
+    color: silver;
+    background-color: #4F5B69;
+    grid-area: b;
+    padding: 10px;
+}
+
+#c {
+    color: silver;
+    background-color: #4F5B69;
+    grid-area: c;
+}
+
+#d {
+    color: silver;
+    background-color: #4F5B69;
+    grid-area: d;
+}
+
+#e {
+    color: silver;
+    background-color: #4F5B69;
+    grid-area: e;
+}
+
+#f {
+    color: #292F36;
+    background-color: #92DCE5;
+    grid-area: f;
+}
+
+@media screen and (min-width: 576px) {
+    /*DESKTOP GRID*/
+    .container {
+        background-color: #292F36;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 174px 100px 140px 50px;
+        column-gap: 16px;
+        row-gap: 16px;
+        padding: 16px;
+        grid-template-areas:
+          "a c c"
+          "b c c"
+          "b e d"
+          "b e ."
+          "f f f"
+
+    }
+
+}
